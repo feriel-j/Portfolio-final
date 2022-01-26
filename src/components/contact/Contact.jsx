@@ -43,9 +43,9 @@ export default function Contact() {
         <h2>Contact.</h2>
         <form onSubmit={(handleSubmit, sendEmail)}>
           <input type="text" placeholder="Fullname" name="fullname" />
-          <input type="email" placeholder="Email" name="email" />
+          <input type="email" name="email" placeholder="Email" required />
           <textarea placeholder="Message" name="message"></textarea>
-          <button type="submit">Send </button>
+          <input type="submit" value="Send" className="button" />
           {result ? (
             <span>
               Your message has been sent successfully, I'll reply as soon as
